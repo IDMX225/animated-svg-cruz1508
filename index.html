@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    :root {
+        --lightcolor: #0EE803;
+        --dark-color: #E80303;
+    }
+
+    svg {
+        cursor: pointer;
+    }
+    #darkGroup {
+        fill:var(--dark-color)
+
+    }
+    #lightGroup {
+        fill:var(--light-color)
+
+    }
+    #dark1,
+    #light1,
+    #dark2 {
+        transition: all 1s ease;
+    }
+    #dark2 {
+        transform: translateX(-100%);
+    }
+
+    svg:hover #light1 {
+        transform: translateX(20%);
+    }
+    svg:hover #dark1 {
+        transform: translateX(40%);
+        opacity: 0;
+    }
+    svg:hover #dark2 {
+        transform: translateX(0%);
+    }
+    </style>
+</head>
+<body>
+    <svg width="385" height="279" viewBox="0 0 385 279" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="385" height="279" fill="#1E1E1E"/>
+        <g id="Frame 1" clip-path="url(#clip0_0_1)">
+        <rect width="385" height="279" fill="white"/>
+        <g id="lightgroup">
+        <path id="light1" d="M94.9641 137.874C101.856 143.532 101.772 154.106 94.7917 159.654L43.958 200.057C34.7439 207.381 21.1542 200.756 21.2474 188.987L21.8936 107.381C21.9868 95.611 35.6796 89.2024 44.7766 96.6709L94.9641 137.874Z" fill="#0EE803" fill-opacity="0.7"/>
+        </g>
+        <g id="darkgroup">
+        <path id="dark1" d="M138.964 138.874C145.856 144.532 145.772 155.106 138.792 160.654L87.9579 201.057C78.7438 208.381 65.1542 201.756 65.2474 189.987L65.8935 108.381C65.9867 96.611 79.6795 90.2024 88.7765 97.6709L138.964 138.874Z" fill="#E80303" fill-opacity="0.7"/>
+        <path id="dark2" d="M93.9641 136.874C100.856 142.532 100.772 153.106 93.7917 158.654L42.958 199.057C33.7439 206.381 20.1542 199.756 20.2474 187.987L20.8936 106.381C20.9868 94.611 34.6796 88.2024 43.7766 95.6709L93.9641 136.874Z" fill="#E80303" fill-opacity="0.7"/>
+        </g>
+        </g>
+        <defs>
+        <clipPath id="clip0_0_1">
+        <rect width="385" height="279" fill="white"/>
+        </clipPath>
+        </defs>
+        </svg>
+</body>
+</html>
+
